@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 720px){
+    #containerConfer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #textoConfer{
+        
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 2rem;
+    }
+
+    #contenedorGeo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 720px){
+    #containerConfer{
+        position: relative; 
+        
+    }
+
+    #textoConfer{
+        position: absolute;
+        top: 30%;
+        right: 2%;
+        width: 35rem;
+        height: 20rem;
+        margin: 0;
+        padding: 2rem;
+    }
+
+    #contenedorGeo{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #geoFoto{
+        width: 50%;
+    }
+
+    #geoTexto{
+        width: 50%;
+    }
+}
