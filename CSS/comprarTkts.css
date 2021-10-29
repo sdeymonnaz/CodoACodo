@@ -1,6 +1,4 @@
 #contenedorPpal{
-    display: flex;
-    flex-direction: column;
     background-color: red;
 }
 
@@ -11,8 +9,6 @@ color: aquamarine;
 
 
 #containerForm{
-    display: flex;
-    flex-direction: column;
     background-color: aquamarine;
-    justify-content: center;
+
 }
