@@ -1,20 +1,19 @@
-
-let categoria = document.getElementById('inputCategoria');
-let cantidad = document.getElementById('inputCantidad');
-let resumen = document.getElementById('cajaTotal');
-let precio = 200;
-
+const precio = 200;
 
 function calcularPrecio() {
+    let categoria = document.getElementById('inputCategoria');
+    let cantidad = document.getElementById('inputCantidad');
+    let resumen = document.getElementById('cajaTotal');
+
     if (categoria.value == 'Estudiante') {
-        precio = precio * 0.8;
+        precioFinal = precio * 0.2;
     }
     else if (categoria.value == 'Trainee') {
-        precio = precio * 0.5
+        precioFinal = precio * 0.5
     } else{
-        precio = precio * 0.15
+        precioFinal = precio * 0.85
     }
-        resumen.textContent = `Total a Pagar: $${cantidad.value * precio}`;
+        resumen.textContent = `Total a Pagar: $${cantidad.value * precioFinal}`;
 }
 
 
