@@ -87,21 +87,21 @@
             <h1 class="p-3">VALOR DE TICKET $200</h1>
             <form class="row g-3">
                 <div class="col-md-6">
-                  <input type="text" class="form-control" id="inputEmail4" placeholder="Nombre">
+                  <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
                 </div>
                 <div class="col-md-6">
-                  <input type="text" class="form-control" id="inputPassword4" placeholder="Apellido">
+                  <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
                 </div>
                 <div class="col-12">
-                  <input type="email" class="form-control" id="inputAddress" placeholder="Correo">
+                  <input type="email" class="form-control" id="inputCorreo" placeholder="Correo">
                 </div>
                 <div class="col-6">
                   <label for="inputAddress2" class="form-label">Cantidad</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="cantidad">
+                  <input type="text" class="form-control" id="inputCantidad" placeholder="cantidad">
                 </div>
                 <div class="col-md-6">
-                  <label for="inputCity" class="form-label">Categoría</label>
-                  <select id="inputState" class="form-select">
+                  <label for="inputCategoria" class="form-label">Categoría</label>
+                  <select id="inputCategoria" class="form-select">
                     <option selected>Estudiante</option>
                     <option>Trainee</option>
                     <option>Junior</option>
@@ -114,7 +114,7 @@
                     <button type="reset" class="btn btn-primary border" style="background-color: yellowgreen; width: 100%;" id="botonBorrar">Borrar</button>
                 </div>
                 <div class="col-6">
-                    <button type="submit" class="btn btn-primary border" style="background-color: yellowgreen; width: 100%;" id="botonResumen">Resumen</button>
+                    <button onclick="calcularPrecio()" type="button" class="btn btn-primary border" style="background-color: yellowgreen; width: 100%;" id="botonResumen">Resumen</button>
                 </div>
               </form>
 
